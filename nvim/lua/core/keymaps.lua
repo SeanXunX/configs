@@ -17,8 +17,9 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("n", "<leader>v", "<C-w>v") -- vertical
 keymap.set("n", "<leader>s", "<C-w>s") -- horizontal
 keymap.set("n", "<leader>o", "<C-w>o") -- leave only one
+keymap.set("n", "<leader>w", ":set wrap<CR>")
+keymap.set("n", "<leader>nw", ":set nowrap<CR>")
 
-    
 --  move among windows
 -- keymap.set("n", "<leader>h", "<C-w>h") 
 -- keymap.set("n", "<leader>j", "<C-w>j")
