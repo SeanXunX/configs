@@ -11,3 +11,16 @@ map("n", "<C-h>", "<C-w>h")
 map("n", "<C-j>", "<C-w>j")
 map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
+
+-- Move cursor to the begin and end
+map("i", "<M-h>", "<Home>")
+map("i", "<M-l>", "<End>")
+
+-- Open nvim-tree explorer
+map("n", "<leader>e", ":NvimTreeToggle<Enter>")
+
+-- Open markdown preview
+map("n", "<leader>m", ":MarkdownPreviewToggle<CR>")
+
+-- Toggle word wrap
+map("n", "<leader>w", ":set wrap!<CR>")
