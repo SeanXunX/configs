@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
 -- open Lazy panel
-map("n", "<leader>l", "<cmd>Lazy<cr>", {desc = "Lazy"})
+map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
 
 -- jk esc
 map("i", "jk", "<esc>")
@@ -24,3 +24,6 @@ map("n", "<leader>m", ":MarkdownPreviewToggle<CR>")
 
 -- Toggle word wrap
 map("n", "<leader>w", ":set wrap!<CR>")
+
+-- Format
+map("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>")
