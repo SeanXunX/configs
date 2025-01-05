@@ -18,3 +18,6 @@ opt.smartcase = true
 
 -- no word wrap
 opt.wrap = false
+
+-- sync with system clipboard
+opt.clipboard= "unnamedplus"
