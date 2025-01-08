@@ -3,9 +3,6 @@ return {
     config = function()
         local lspconfig = require("lspconfig")
 
-        -- python
-        lspconfig.pyright.setup({})
-
         --lua
         lspconfig.lua_ls.setup({
             on_init = function(client)
@@ -40,5 +37,12 @@ return {
                 Lua = {}
             }
         })
+
+        -- python
+        lspconfig.pyright.setup({})
+
+        -- clangd
+        lspconfig.clangd.setup({})
+
     end
 }
