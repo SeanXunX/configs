@@ -27,3 +27,13 @@ map("n", "<leader>w", ":set wrap!<CR>")
 
 -- Format
 map("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>")
+
+-- save file
+map("n", "<leader>s", ":w<CR>")
+map("n", "<C-s>", ":w<CR>")
+
+-- Modify window size
+map("n", "<leader>,", "<C-w><")
+map("n", "<leader>.", "<C-w>>")
+map("n", "<leader>|", "<C-w>|")
+map("n", "<leader>=", "<C-w>=")
