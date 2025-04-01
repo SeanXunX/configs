@@ -5,3 +5,5 @@ end
 
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+set -gx PATH /usr/local/go/bin $PATH
