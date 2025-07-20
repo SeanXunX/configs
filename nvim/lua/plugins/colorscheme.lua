@@ -4,10 +4,14 @@ return {
     },
     {
         "rebelot/kanagawa.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.cmd([[colorscheme kanagawa]])
-        end,
+        opts = {
+            transparent = true
+        }
+    },
+    {
+        "ellisonleao/gruvbox.nvim",
+        opts = {
+            transparent_mode = true
+        }
     }
 }

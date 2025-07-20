@@ -20,4 +20,11 @@ opt.smartcase = true
 opt.wrap = false
 
 -- sync with system clipboard
-opt.clipboard= "unnamedplus"
+opt.clipboard = "unnamedplus"
+
+-- auto format when saving files
+vim.api.nvim_create_autocmd("BufWritePre", {
+    callback = function()
+        vim.lsp.buf.format()
+    end
+})
